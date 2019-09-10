@@ -34,17 +34,12 @@ def bubble_sort( arr ):
         num = i
         swaps = 0
         while num < len(arr) - 1:
-            print(arr[num] > arr[num + 1])
-            print(arr[num], arr[num + 1])
             if arr[num] > arr[num + 1]:
-                print(arr[num], arr[num + 1])
                 [arr[num], arr[num + 1]] = [arr[num + 1], arr[num]]
                 num += 1
                 swaps += 1
-                print(arr)
             else:
                 num += 1
-                print(arr)
                 if num == len(arr) - 1 and swaps == 0:
                     return arr
 
@@ -54,5 +49,5 @@ bubble_sort([2,4,1,9,7,3,5,8,8])
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
-
+    
     return arr
